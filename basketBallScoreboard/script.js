@@ -24,25 +24,7 @@ function reset(){
 }
 
 function lead(){
-    if (parseInt(homeScore.innerHTML)>parseInt(guestScore.innerHTML)){
-        homeScore.classList.add('lead');
-        if (guestScore.classList.length>1){
-            guestScore.classList.remove('lead');
-        }
-    }
-    else if (parseInt(homeScore.innerHTML)<parseInt(guestScore.innerHTML)){
-        guestScore.classList.add('lead');
-        if (homeScore.classList.length>1){
-            homeScore.classList.remove('lead');
-        }
-    }
-    else{
-        if (homeScore.classList.length>1){
-            homeScore.classList.remove('lead');
-        }
-        if (guestScore.classList.length>1){
-            guestScore.classList.remove('lead');
-        }
-    }
+    homeScore.classList.toggle('lead',parseInt(homeScore.innerHTML)>parseInt(guestScore.innerHTML));
+    guestScore.classList.toggle('lead',parseInt(homeScore.innerHTML)<parseInt(guestScore.innerHTML));
 }
 lead()

@@ -16,6 +16,7 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: var(--light);
+    background-color: gray;
 }
 
 .container{
@@ -35,7 +36,8 @@ body{
     width: 575px;
     height: 385px;
     background-color: var(--bgc);
-    border-radius: 0.5rem;
+    border: 0.5rem solid var(--light);
+    border-radius: 1rem;
 }
 
 .team{
@@ -81,6 +83,10 @@ body{
     height: 125px;
     width: 175px;
     border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+.lead{
+    border: 1px solid var(--red);
 }
 .buttons{
     display: grid;

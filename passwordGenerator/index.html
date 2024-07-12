@@ -11,8 +11,8 @@
     <body>
         <!-- <div class="container">
             BANG BANG THEME
-            <button id="theme" onclick="changeTheme()">change theme</button>
         </div> -->
+        <button id="theme" onclick="changeTheme()">Theme</button>
         <main id="main">
             <header>
                 <h1>Generate a</h1>
@@ -25,14 +25,15 @@
             </div>
             <form>
                 <input type="number" id="length" min="8" value="8" placeholder="Length">
+                <button id="toggle" class="on" onclick="symbolsOff()">Symbols</button>
                 <button onclick="generate()">Generate Passwords</button>
             </form>
             <div>
                 <hr>
             </div>
             <div class="fields">
-                <div class="field" onclick="copy0()">>nfJjy!dDvR&ial</div>
-                <div class="field" onclick="copy1()">eg&lt;xWij@veiPUwK</div>
+                <div class="field" onclick="copy0()"></div>
+                <div class="field" onclick="copy1()"></div>
             </div>
         </main>
         <script src="script.js"></script>

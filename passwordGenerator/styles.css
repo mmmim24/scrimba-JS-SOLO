@@ -3,29 +3,54 @@
     --button: #10B981; 
     --field: #273549;
     --field-color: #55F991;
-
+    
     --darkbg: #1F2937;
     --dark-color1: #FFFFFF;
     --dark-color2: #4ADF86;
     --dark-color3: #D5D4D8;
-
+    
     --lightbg: #ECFDF5;
     --light-color1: #2B283A;
     --light-color2: #10B981;
     --light-color3: #6B7280;
 }
 body{
-    background-color: var(--lightbg);
+    background-color: var(--darkbg);
     font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    margin: 8rem auto;
+    gap: 4rem;
+    align-items: center;
+}
+.darkBody{
+    background-color: var(--lightbg);
+    color: #efefef;
+}
+#theme{
+    border: none;
+    background-color: var(--button);
+    color: white;
+    width: 211px;
+    height: 39px;
+    letter-spacing: 0.75px;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 #main{
-    margin: 20vh auto;
     height: 550px;
     width: 550px;
     background-color: var(--darkbg);
     border: 8px solid var(--dark-color1);
     border-radius: 1rem;
-    box-shadow: 0px 0px 4px 4px var(--dark-color3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.darkMain{
+    background-color: var(--lightbg) !important;
+    border: 8px solid var(--light-color1) !important;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,8 +72,14 @@ header h1{
 header h1:first-child{
     color: var(--dark-color1);
 }
+.darkH11{
+    color: var(--light-color1) !important;
+}
 header h1:last-child{
     color: var(--dark-color2);
+}
+.darkH12{
+    color: var(--light-color2) !important;
 }
 div h2{
     color: var(--dark-color3);
@@ -58,7 +89,9 @@ div h2{
     font-size: 20px;
     font-weight: 300;
 }
-
+.darkH21{
+    color: var(--light-color3) !important;
+}
 form{
     display: flex;
     justify-content:center;
@@ -67,12 +100,16 @@ form{
 
 form input{
     border: none;
-    width: 211px;
+    width: 93px;
     height: 39px;
     padding: 0.5rem;
     box-sizing: border-box;
     border-radius: 4px;
+    background-color: var(--field);
+    color: var(--field-color);
+    border: 1px solid var(--button);
 }
+
 form button{
     border: none;
     background-color: var(--button);
@@ -87,6 +124,18 @@ form button{
 form button:hover{
     cursor: pointer;
     border: 1px solid white;
+}
+
+#toggle{
+    width: 93px;
+}
+.on{
+    background-color: var(--button);
+    color: white;
+}
+.off{
+    background-color: var(--field);
+    color: var(--field-color);
 }
 
 hr{
@@ -115,18 +164,4 @@ hr{
 .field:hover{
     cursor: pointer;
     border: 1px solid var(--button);
-}
-
-.container{
-    margin: 20vh auto;
-    height: 60vh;
-    width: 60vh;
-    text-align: center;
-    background-color: #efefef;
-    color: #212121;
-}
-
-.dark{
-    background-color: #212121;
-    color: #efefef;
 }

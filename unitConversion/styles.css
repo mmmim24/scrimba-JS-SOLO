@@ -1,0 +1,126 @@
+:root{
+    --topbg: #6943FF;
+    --color: #FFFFFF;
+    --borderC: #B295FF;
+    --buttonCol: #3D3D3D;
+    
+    --lightbg: #F4F4F4;
+    --lightText1: #5A537B;
+    --lightText2: #353535;
+    
+    --darkbg: #1F2937;
+    --darkbg2: #273549;
+    --darkText: #CCC1FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+#theme{
+    height: 42px;
+    width: 117px;
+    background-color: var(--darkbg2);
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--lightbg);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#top{
+    background-color: var(--topbg);
+    color: var(--color);
+    height: 285px;
+    width: 550px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#top h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#top input{
+    height: 83px;
+    width: 117px;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: var(--color);
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 58px;
+    border: 2px solid var(--borderC);
+    border-radius: 5px;
+}
+
+#top button{
+    height: 42px;
+    width: 117px;
+    background-color: var(--color);
+    border-radius: 5px;
+    color: var(--buttonCol);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom{
+    background-color: var(--lightbg);
+    height: 445px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.darkBottom{
+    background-color: var(--darkbg);
+}
+
+.item{
+    height: 108px;
+    width: 500px;
+    background-color: var(--color);
+    text-align: center;
+}
+.darkItem{
+    background-color: var(--darkbg2);
+}
+
+.item h3{
+    color: var(--lightText1);
+    font-size: 20px;
+    font-weight: 600;
+}
+.darkText1{
+    color: var(--darkText) !important;
+}
+
+.item p{
+    color: var(--lightText2);
+    font-size: 14px;
+    font-weight: 400;
+}
+.darkText2{
+    color: var(--color) !important;
+}

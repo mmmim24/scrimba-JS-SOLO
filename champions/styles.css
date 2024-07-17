@@ -1,0 +1,16 @@
+:root{
+    --bgcolor: #1B1924;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+main{
+    height: 844px;
+    width: 390px;
+    background-color: var(--bgcolor);
+}
